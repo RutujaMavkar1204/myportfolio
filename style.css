@@ -307,6 +307,20 @@ a:hover i {
         border-radius: 0 0 1rem 1rem;
         transition: .5s;
     }
+    
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black-color);
+  position: absolute;
+  z-index:0;
+  top: var(--header-height);
+  right: 0;
+  left: 0;
+  padding: 1rem 0;
+}
+
     .social-wrapper{
       display: none; 
     }
@@ -1509,11 +1523,6 @@ button:hover {
     --small-font-size: 1.37rem;
 }
 
-
-.nav-menu {
-   top: 60px;
-}
-
 .nav-item {
    margin-bottom: 0.5rem;
 }
@@ -1566,10 +1575,7 @@ height:0rem;
 
 .nav.bd-grid{ padding: 1rem; }
 
-.nav-list{ 
-    display: flex;
-    padding-top: 0;
-}
+
 
 .nav-item{
     margin-left: 3rem;
@@ -1615,19 +1621,7 @@ height:0rem;
   height: auto;
 }
 
-.nav-menu {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--black-color);
-  position: absolute;
-  top: var(--header-height);
-  right: 0;
-  left: 0;
-  padding: 1rem 0;
-}
-
-.nav-menu.show {
+.show {
   display: flex;
 }
 
