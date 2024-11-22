@@ -307,20 +307,6 @@ a:hover i {
         border-radius: 0 0 1rem 1rem;
         transition: .5s;
     }
-    
-.nav-menu {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--black-color);
-  position: absolute;
-  z-index:0;
-  top: var(--header-height);
-  right: 0;
-  left: 0;
-  padding: 1rem 0;
-}
-
     .social-wrapper{
       display: none; 
     }
@@ -329,6 +315,59 @@ a:hover i {
 
     
 }
+
+@media screen and (min-width: 768px){
+    :root{
+        --h1-font-size: 4.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 1.37rem;
+    }
+
+    .l-main{
+         height: 100vh; 
+        
+        }
+
+    .nav{ height: var(--header-height) + 1rem; }
+
+    .nav.bd-grid{ padding: 1rem; }
+    
+    .nav-list{ 
+        display: flex;
+        padding-top: 0;
+    }
+
+    .nav-item{
+        margin-left: 3rem;
+        margin-bottom: 0;
+    }
+
+    .nav-toggle{ display: none; }
+
+    .home{
+        grid-template-rows: max-content 20px;
+        align-content: center;
+    }
+
+    .home-information{ margin-top: 2rem; }
+    .home-social{ 
+        flex-direction: row;
+        padding-top: 8rem;
+        padding-bottom: 0;
+    }
+
+        .home-social-icon{
+            margin-right: 2rem;
+            margin-bottom: 0;
+        }
+
+   
+
+}
+
+
+
 
 /*about*/
 #about-me {
@@ -1516,91 +1555,6 @@ button:hover {
 
 
 @media (max-width: 768px) {
-  :root{
-    --h1-font-size: 4.5rem;
-    --h2-font-size: 2rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 1.37rem;
-}
-
-.nav-item {
-   margin-bottom: 0.5rem;
-}
-.home-img{
-width:0rem;
-height:0rem;
-}
-
-.myphoto{
- margin-left:7rem;
- width:0rem;
- height:0rem;
-}
-
-.home-title {
-   font-size: 1.2rem;
-}
-
-.home-skill {
-   font-size: 0.7rem;
-}
-
-.home-button {
-   font-size: 0.6rem;
-}
-
-.skills-picker-wrapper {
-   margin-left: 40px;
-}
-
-.skills-picker {
-   width: 200px;
-   height: 200px;
-}
-
-.project-card img {
-   width: 100%;
-   height: auto;
-}
-
-.container {
-   padding: 5px;
-}
-.l-main{
-     height: 100vh; 
-    
-    }
-
-.nav{ height: var(--header-height) + 1rem; }
-
-.nav.bd-grid{ padding: 1rem; }
-
-
-
-.nav-item{
-    margin-left: 3rem;
-    margin-bottom: 0;
-}
-
-.nav-toggle{ display: none; }
-
-.home{
-    grid-template-rows: max-content 20px;
-    align-content: center;
-}
-
-.home-social{ 
-    flex-direction: row;
-    padding-top: 8rem;
-    padding-bottom: 0;
-}
-
-    .home-social-icon{
-        margin-right: 2rem;
-        margin-bottom: 0;
-    }
-
-
 
 .l-header {
   padding-right: 1rem;
@@ -1608,12 +1562,12 @@ height:0rem;
 }
 
 .l-main {
-  height: 4rem;
+  height: 230px;
   justify-content: center;
 }
 
 .home-information {
-  height: 200px;
+  height: 100px;
 }
 
 .nav {
@@ -1621,7 +1575,19 @@ height:0rem;
   height: auto;
 }
 
-.show {
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black-color);
+  position: absolute;
+  top: var(--header-height);
+  right: 0;
+  left: 0;
+  padding: 1rem 0;
+}
+
+.nav-menu.show {
   display: flex;
 }
 
@@ -1636,15 +1602,13 @@ height:0rem;
 .home {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  margin-top:200px;
-  height: 100px;
+  height: auto;
 }
 
 .home-information {
   margin-left: 0;
   padding-left: 0;
   text-align: center;
-
 }
 
 .language {
@@ -1988,7 +1952,58 @@ height:0rem;
   }
 }
 
+@media (max-width: 768px) {
+  .home-information {
+      margin-top: 2rem;
+  }
 
+  .nav-menu {
+      top: 60px;
+  }
+
+  .nav-item {
+      margin-bottom: 0.5rem;
+  }
+ .home-img{
+  width:0rem;
+  height:0rem;
+ }
+
+  .myphoto{
+    margin-left:7rem;
+    width:0rem;
+    height:0rem;
+  }
+
+  .home-title {
+      font-size: 1.2rem;
+  }
+
+  .home-skill {
+      font-size: 0.7rem;
+  }
+  .home-button {
+      font-size: 0.6rem;
+  }
+
+  .skills-picker-wrapper {
+      margin-left: 40px;
+  }
+
+  .skills-picker {
+      width: 200px;
+      height: 200px;
+  }
+
+  .project-card img {
+      width: 100%;
+      height: auto;
+  }
+
+  .container {
+      padding: 5px;
+  }
+}
 
 @media (max-width: 576px) {
   .nav-menu {
