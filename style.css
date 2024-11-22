@@ -362,10 +362,7 @@ a:hover i {
             margin-bottom: 0;
         }
 
-    .home-img{
-        width: 553px;
-        right: 5%;
-    }
+   
 
 }
 
@@ -1565,7 +1562,7 @@ button:hover {
 }
 
 .l-main {
-  height: 730px;
+  height: 230px;
   margin-bottom: 0px;
   margin-top: 0px;
   justify-content: center;
@@ -1972,12 +1969,15 @@ button:hover {
   .nav-item {
       margin-bottom: 0.5rem;
   }
- 
+ .home-img{
+  width:0rem;
+  height:0rem;
+ }
 
   .myphoto{
     margin-left:7rem;
-    width:20rem;
-    height:30rem;
+    width:0rem;
+    height:0rem;
   }
 
   .home-title {
