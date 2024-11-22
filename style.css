@@ -316,59 +316,6 @@ a:hover i {
     
 }
 
-@media screen and (min-width: 768px){
-    :root{
-        --h1-font-size: 4.5rem;
-        --h2-font-size: 2rem;
-        --normal-font-size: 1rem;
-        --small-font-size: 1.37rem;
-    }
-
-    .l-main{
-         height: 100vh; 
-        
-        }
-
-    .nav{ height: var(--header-height) + 1rem; }
-
-    .nav.bd-grid{ padding: 1rem; }
-    
-    .nav-list{ 
-        display: flex;
-        padding-top: 0;
-    }
-
-    .nav-item{
-        margin-left: 3rem;
-        margin-bottom: 0;
-    }
-
-    .nav-toggle{ display: none; }
-
-    .home{
-        grid-template-rows: max-content 20px;
-        align-content: center;
-    }
-
-    .home-information{ margin-top: 2rem; }
-    .home-social{ 
-        flex-direction: row;
-        padding-top: 8rem;
-        padding-bottom: 0;
-    }
-
-        .home-social-icon{
-            margin-right: 2rem;
-            margin-bottom: 0;
-        }
-
-   
-
-}
-
-
-
-
 /*about*/
 #about-me {
   margin-top: 2rem;
@@ -1555,6 +1502,99 @@ button:hover {
 
 
 @media (max-width: 768px) {
+  :root{
+    --h1-font-size: 4.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 1.37rem;
+}
+
+
+.nav-menu {
+   top: 60px;
+}
+
+.nav-item {
+   margin-bottom: 0.5rem;
+}
+.home-img{
+width:0rem;
+height:0rem;
+}
+
+.myphoto{
+ margin-left:7rem;
+ width:0rem;
+ height:0rem;
+}
+
+.home-title {
+   font-size: 1.2rem;
+}
+
+.home-skill {
+   font-size: 0.7rem;
+}
+
+.home-button {
+   font-size: 0.6rem;
+}
+
+.skills-picker-wrapper {
+   margin-left: 40px;
+}
+
+.skills-picker {
+   width: 200px;
+   height: 200px;
+}
+
+.project-card img {
+   width: 100%;
+   height: auto;
+}
+
+.container {
+   padding: 5px;
+}
+.l-main{
+     height: 100vh; 
+    
+    }
+
+.nav{ height: var(--header-height) + 1rem; }
+
+.nav.bd-grid{ padding: 1rem; }
+
+.nav-list{ 
+    display: flex;
+    padding-top: 0;
+}
+
+.nav-item{
+    margin-left: 3rem;
+    margin-bottom: 0;
+}
+
+.nav-toggle{ display: none; }
+
+.home{
+    grid-template-rows: max-content 20px;
+    align-content: center;
+}
+
+.home-social{ 
+    flex-direction: row;
+    padding-top: 8rem;
+    padding-bottom: 0;
+}
+
+    .home-social-icon{
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+
+
 
 .l-header {
   padding-right: 1rem;
@@ -1562,15 +1602,12 @@ button:hover {
 }
 
 .l-main {
-  height: 230px;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  height: 4rem;
   justify-content: center;
 }
 
 .home-information {
-  height: 100px;
-  margin-bottom: 0px;
+  height: 200px;
 }
 
 .nav {
@@ -1605,15 +1642,15 @@ button:hover {
 .home {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  padding: 2rem 1rem;
-  height: auto;
+  margin-top:200px;
+  height: 100px;
 }
 
 .home-information {
   margin-left: 0;
   padding-left: 0;
-  margin-top: 4rem;
   text-align: center;
+
 }
 
 .language {
@@ -1957,59 +1994,7 @@ button:hover {
   }
 }
 
-@media (max-width: 768px) {
-  .home-information {
-      margin-top: 2rem;
-  }
 
-  .nav-menu {
-      top: 60px;
-  }
-
-  .nav-item {
-      margin-bottom: 0.5rem;
-  }
- .home-img{
-  width:0rem;
-  height:0rem;
- }
-
-  .myphoto{
-    margin-left:7rem;
-    width:0rem;
-    height:0rem;
-  }
-
-  .home-title {
-      font-size: 1.2rem;
-  }
-
-  .home-skill {
-      font-size: 0.7rem;
-  }
-
-  .home-button {
-      font-size: 0.6rem;
-  }
-
-  .skills-picker-wrapper {
-      margin-left: 40px;
-  }
-
-  .skills-picker {
-      width: 200px;
-      height: 200px;
-  }
-
-  .project-card img {
-      width: 100%;
-      height: auto;
-  }
-
-  .container {
-      padding: 5px;
-  }
-}
 
 @media (max-width: 576px) {
   .nav-menu {
